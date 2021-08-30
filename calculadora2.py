@@ -1,0 +1,1 @@
+print(input('Bienvenido a la calculadora, ingresa el primer número: '))
