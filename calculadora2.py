@@ -1,14 +1,14 @@
 primerNumero = input('Bienvenido a la calculadora, ingresa el primer número: ')
 
 try:
-    primerNumero = int(primerNumero)
+    primerNumero = float(primerNumero)
 except:
         primerNumero = 'invalido'
 
 while primerNumero == 'invalido':
     primerNumero = input('El dato es incorrecto, ingresa un número: ')
     try:
-        primerNumero = int(primerNumero)
+        primerNumero = float(primerNumero)
     except:
         primerNumero = 'invalido'
 
@@ -31,14 +31,14 @@ else:
         segundoNumero = input('Elegiste división, ingresa el segundo número: ')
 
 try:
-    segundoNumero = int(segundoNumero)
+    segundoNumero = float(segundoNumero)
 except:
     segundoNumero = 'invalido'
 
 while segundoNumero == 'invalido':
     segundoNumero = input('El dato ingresado es incorrecto, ingresa un número: ')
     try:
-        segundoNumero = int(segundoNumero)
+        segundoNumero = float(segundoNumero)
     except:
         segundoNumero = 'invalido'
 
@@ -51,4 +51,5 @@ else:
         print('El resultado de ', primerNumero, '*', segundoNumero, 'es:', primerNumero*segundoNumero)
     elif operacion == '/':
         print('El resultado de ', primerNumero, '/', segundoNumero, 'es:', primerNumero/segundoNumero)
+
 
